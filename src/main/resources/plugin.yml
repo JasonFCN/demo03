@@ -1,0 +1,25 @@
+name: Demo03Mcplugin
+version: '${project.version}'
+main: com.cwj.demo03mcplugin.Demo03Mcplugin
+
+commands:
+  god:
+    description: 上帝模式
+    aliases: [god]
+    permission: my.god
+    permission-message: You do not have my.god 权限
+    usage: /<command>
+  suicide:
+    description: 自杀
+    aliases: [zs]
+    permission: my.suicide
+    permission-message: You do not have my.suicide 权限
+
+permissions:
+  my.god:
+    description: 上帝权限
+    default: op
+  my.suicide:
+    description: 自杀
+    default: true
+

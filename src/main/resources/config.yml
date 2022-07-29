@@ -1,0 +1,7 @@
+list:
+  - a
+  - b
+  - 123
+map:
+  name: tom
+  age: 12
