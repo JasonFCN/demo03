@@ -22,6 +22,7 @@ public class MyCommandExecutor implements CommandExecutor {
                     sender.sendMessage(ChatColor.WHITE + "现在切换成" + (player.isInvulnerable() ? "上帝模式" : "非上帝模式"));
                 }else{
                     sender.sendMessage("<god>命令只有玩家才能使用");
+                    return false;
                 }
                 return true;
             case "suicide":
@@ -31,6 +32,7 @@ public class MyCommandExecutor implements CommandExecutor {
                     sender.sendMessage(ChatColor.RED + "你离开了这个世界。。。");
                 }else{
                     sender.sendMessage("<suicide>命令只有玩家才能使用");
+                    return false;
                 }
                 return true;
             default:
